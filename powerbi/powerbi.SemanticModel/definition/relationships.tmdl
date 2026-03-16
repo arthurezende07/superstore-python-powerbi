@@ -1,0 +1,10 @@
+relationship 7b17c9d9-d340-4270-b57e-3d8d6eaa0201
+	joinOnDateBehavior: datePartOnly
+	fromColumn: superstore_limpo.order_date
+	toColumn: LocalDateTable_ef221390-e00a-4ea4-9a69-f97125f6a7ca.Date
+
+relationship 3e849518-64a6-4ec5-b655-3ee4d6aa7990
+	joinOnDateBehavior: datePartOnly
+	fromColumn: superstore_limpo.ship_date
+	toColumn: LocalDateTable_96721eae-fb03-4617-b274-dce9bdd66a50.Date
+

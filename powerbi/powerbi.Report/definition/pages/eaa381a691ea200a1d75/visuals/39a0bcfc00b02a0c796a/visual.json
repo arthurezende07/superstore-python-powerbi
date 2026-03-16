@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "39a0bcfc00b02a0c796a",
+  "position": {
+    "x": -2.2204460492503131E-16,
+    "y": 532.09754980535649,
+    "z": 11000,
+    "height": 68.9168765743073,
+    "width": 162.31738035264482,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "superstore_limpo"
+                    }
+                  },
+                  "Property": "segment"
+                }
+              },
+              "queryRef": "superstore_limpo.segment",
+              "nativeQueryRef": "Segmento",
+              "active": true,
+              "displayName": "Segmento"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,33 @@
+# Ambiente virtual
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Arquivos temporários
+*.tmp
+
+# Power BI cache
+*.pbix.autosave
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Arquivos grandes opcionais
+*.zip

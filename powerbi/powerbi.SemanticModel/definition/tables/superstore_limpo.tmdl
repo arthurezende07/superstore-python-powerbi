@@ -1,0 +1,304 @@
+table superstore_limpo
+	lineageTag: dcfc98f8-c717-4428-af4f-1f351b3fdce1
+
+	measure 'Total Vendas' = SUM(superstore_limpo[sales])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: bbb48970-53e0-4719-99ec-a96b91f7abd2
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Lucro' = SUM(superstore_limpo[profit])
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 153344bd-1c94-4cb2-957a-006424986a50
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Margem %' = DIVIDE([Total Lucro],[Total Vendas],0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 2105bd36-643a-48a6-826e-75293e683b65
+
+	measure 'Total Pedidos' = DISTINCTCOUNT(superstore_limpo[order_id])
+		formatString: 0
+		lineageTag: 52a91976-3918-4eec-8c42-fc47d62b05ec
+
+	measure 'Ticket Médio' = DIVIDE([Total Vendas],[Total Pedidos])
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: c61866b8-3b6c-4baf-bdf0-4131cb35abf2
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Desconto Médio' = AVERAGE(superstore_limpo[discount])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 93a6a6e1-d7f0-42b8-822f-39e7d84b814d
+
+	measure 'Total de Clientes' = DISTINCTCOUNT(superstore_limpo[customer_id])
+		formatString: 0
+		lineageTag: 3ae67ea3-0552-41a8-a94f-65518d8ff42c
+
+	measure 'Vendas por Cliente' = DIVIDE([Total Vendas], [Total de Clientes])
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: dc54c1be-1ca8-41fd-a0dd-cfd8380ccfa9
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column order_id
+		dataType: string
+		lineageTag: 102ec121-0b73-4c35-a313-c35ae218f2bd
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 922f814f-f289-470d-adcb-9d491a650ca4
+		summarizeBy: none
+		sourceColumn: order_date
+
+		variation Variation
+			isDefault
+			relationship: 7b17c9d9-d340-4270-b57e-3d8d6eaa0201
+			defaultHierarchy: LocalDateTable_ef221390-e00a-4ea4-9a69-f97125f6a7ca.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ship_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: dd7b67d3-4023-42bf-b8ef-10e3130e8858
+		summarizeBy: none
+		sourceColumn: ship_date
+
+		variation Variation
+			isDefault
+			relationship: 3e849518-64a6-4ec5-b655-3ee4d6aa7990
+			defaultHierarchy: LocalDateTable_96721eae-fb03-4617-b274-dce9bdd66a50.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ship_mode
+		dataType: string
+		lineageTag: 0b6dfade-69f4-49e9-8632-2012216c8634
+		summarizeBy: none
+		sourceColumn: ship_mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: string
+		lineageTag: 3a7c75e9-ab6b-41ed-bf6e-0c42a9f56f42
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		lineageTag: 21f07760-f2df-4787-9702-b3ee034082fb
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column segment
+		dataType: string
+		lineageTag: 992ceff4-2d2a-40e4-8f3e-c2a8ac390f25
+		summarizeBy: none
+		sourceColumn: segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 43c1d223-191c-4348-b3f7-94131c68dfe6
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 34ef9eb3-ae82-4a85-933f-d9d9855a6068
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: f77af09e-d852-4846-86ef-9159944dfe1e
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column postal_code
+		dataType: string
+		lineageTag: efa7238b-9548-4837-a8f7-4b52130d92d4
+		summarizeBy: none
+		sourceColumn: postal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 41289cc9-2acb-4361-821c-760ea14ba7ec
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: string
+		lineageTag: 6fafbd8a-7780-4dd1-9075-3579895a00b3
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: a8d7a2fd-f872-4ef1-99ba-2ecb585fc7b5
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_category
+		dataType: string
+		lineageTag: 2243f2b2-94c0-42c8-b0fa-8ae1efc167c6
+		summarizeBy: none
+		sourceColumn: sub_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_name
+		dataType: string
+		lineageTag: f9f1c419-f566-4d4e-8fcd-fa543c1fbff4
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: c7cf8ac5-0220-48a1-91a1-939af8effc00
+		summarizeBy: sum
+		sourceColumn: sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: b29b3417-093f-4e67-86f5-ae10928b431e
+		summarizeBy: sum
+		sourceColumn: quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column discount
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0d3a1e8d-52a9-47a4-8353-108cae8a3daf
+		summarizeBy: sum
+		sourceColumn: discount
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 46422576-c27b-44f8-bff8-12f71a10fd11
+		summarizeBy: sum
+		sourceColumn: profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column data_entrega
+		dataType: int64
+		formatString: 0
+		lineageTag: 3fc173c2-9cea-4633-b765-5a3177b6b03b
+		summarizeBy: sum
+		sourceColumn: data_entrega
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e8fc332-bcb2-4d20-8feb-451e46bd0de3
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: a61e8139-e674-4183-878e-0b7b033f9912
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: c05ec8f2-4682-4200-b2a7-4504a1e13c45
+		summarizeBy: sum
+		sourceColumn: trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column margem_pct
+		dataType: double
+		lineageTag: 5cfaa8f3-9a23-436e-b5ff-f32954c0e0eb
+		summarizeBy: sum
+		sourceColumn: margem_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ticket_medio
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: e18aa083-abc9-464d-90bd-83211cdfa6e5
+		summarizeBy: sum
+		sourceColumn: ticket_medio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition superstore_limpo = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\arthu\OneDrive\Desktop\superstore-python-powerbi\superstore_limpo.csv"),[Delimiter=",", Columns=26, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"order_date", type date}, {"ship_date", type date}}),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Tipo Alterado", {{"sales", Currency.Type}, {"profit", Currency.Type}}, "en-US"),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade",{{"quantity", Int64.Type}}),
+				    #"Tipo Alterado com Localidade1" = Table.TransformColumnTypes(#"Tipo Alterado1", {{"discount", Percentage.Type}}, "en-US"),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade1",{{"data_entrega", Int64.Type}, {"ano", Int64.Type}, {"mes", Int64.Type}, {"trimestre", Int64.Type}}),
+				    #"Tipo Alterado com Localidade2" = Table.TransformColumnTypes(#"Tipo Alterado2", {{"ticket_medio", Currency.Type}}, "en-US"),
+				    #"Tipo Alterado com Localidade3" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade2", {{"margem_pct", Percentage.Type}}, "en-US")
+				in
+				    #"Tipo Alterado com Localidade3"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
