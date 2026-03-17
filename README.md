@@ -21,7 +21,7 @@ O dataset em questão simula operações de uma rede varejista norte-americana f
 - **Página 1** - Visão Geral das Vendas ao Longo do Tempo, Espaço, suas Categorias e Subcategorias
 ![Dashboard Overview](reports/images/overview.png)
 
-- **Página 2** - Detalhamento da Lucratividade, abordando relações de Descontos, Regiões, Categorias, Cubcategorias, Cegmento de Cliente e Margem de Lucro
+- **Página 2** - Detalhamento da Lucratividade, abordando relações de Descontos, Regiões, Categorias, Subcategorias, Cegmento de Cliente e Margem de Lucro
 ![Dashboard Lucratividade](reports/images/lucratividade.png)
 
 - **Página 3** - Detalhamento de Clientes e Operações, abordando clientes mais lucrativos, produtos mais vendidos e envios mais solicitados.
