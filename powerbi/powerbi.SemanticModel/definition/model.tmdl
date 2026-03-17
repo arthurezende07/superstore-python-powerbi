@@ -16,6 +16,7 @@ ref table superstore_limpo
 ref table DateTableTemplate_3cc3cd6b-9733-4d1e-b15c-7b08d32b4456
 ref table LocalDateTable_ef221390-e00a-4ea4-9a69-f97125f6a7ca
 ref table LocalDateTable_96721eae-fb03-4617-b274-dce9bdd66a50
+ref table Medidas
 
 ref cultureInfo pt-BR
 

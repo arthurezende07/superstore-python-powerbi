@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "835691f270b587bb1793",
+  "position": {
+    "x": 564.93702770780851,
+    "y": 479.69773299748107,
+    "z": 7000,
+    "height": 240.30226700251887,
+    "width": 330.07556675062972,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "superstore_limpo"
+                    }
+                  },
+                  "Property": "category"
+                }
+              },
+              "queryRef": "superstore_limpo.category",
+              "nativeQueryRef": "Categoria",
+              "displayName": "Categoria"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "superstore_limpo"
+                    }
+                  },
+                  "Property": "sub_category"
+                }
+              },
+              "queryRef": "superstore_limpo.sub_category",
+              "nativeQueryRef": "Subcategoria",
+              "displayName": "Subcategoria"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "superstore_limpo"
+                        }
+                      },
+                      "Property": "profit"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(superstore_limpo.profit)",
+              "nativeQueryRef": "Lucro",
+              "displayName": "Lucro"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "superstore_limpo"
+                      }
+                    },
+                    "Property": "profit"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#125695'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "3b79b376c88603b361b9",
+  "position": {
+    "x": 234.86146095717885,
+    "y": 5.4408060453400466,
+    "z": 2000,
+    "height": 57.128463476070522,
+    "width": 955.76826196473542,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Relatório - ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "24pt",
+                      "color": "#125695"
+                    }
+                  },
+                  {
+                    "value": "Lucratividade",
+                    "textStyle": {
+                      "fontSize": "24pt",
+                      "color": "#125695"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

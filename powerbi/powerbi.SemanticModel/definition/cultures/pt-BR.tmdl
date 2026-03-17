@@ -2612,180 +2612,141 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo.total_vendas": {
+			    "medida": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
-			          "ConceptualProperty": "Total Vendas"
+			          "ConceptualEntity": "Medidas"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total vendas": {
+			          "medida": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "aggregate venda": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "overall venda": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ]
 			    },
-			    "superstore_limpo.total_lucro": {
+			    "medida.value": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
-			          "ConceptualProperty": "Total Lucro"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Value"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total lucro": {
+			          "value": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "aggregate lucro": {
+			          "assessment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "overall lucro": {
+			          "worth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "Lucro Total": {
+			          "price": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
+			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.9
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
 			          }
 			        }
 			      ]
 			    },
-			    "superstore_limpo.margem_": {
+			    "medida.desconto_médio": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
-			          "ConceptualProperty": "Margem %"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "margem %": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "margem percentage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "Margem de Lucro": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "superstore_limpo.total_pedidos": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
-			          "ConceptualProperty": "Total Pedidos"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "total pedidos": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "aggregate pedido": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "overall pedido": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "superstore_limpo.ticket_médio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
-			          "ConceptualProperty": "Ticket Médio"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ticket médio": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "superstore_limpo.desconto_médio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
+			          "ConceptualEntity": "Medidas",
 			          "ConceptualProperty": "Desconto Médio"
 			        }
 			      },
@@ -2798,10 +2759,10 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo.total_de_clientes": {
+			    "medida.total_de_clientes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
+			          "ConceptualEntity": "Medidas",
 			          "ConceptualProperty": "Total de Clientes"
 			        }
 			      },
@@ -2844,10 +2805,160 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo.vendas_por_cliente": {
+			    "medida.total_lucro": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "superstore_limpo",
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total Lucro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total lucro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate lucro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall lucro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_pedidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total Pedidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total pedidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_vendas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total Vendas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total vendas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate venda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall venda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida.margem_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Margem %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margem %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "margem percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Ticket Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.vendas_por_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
 			          "ConceptualProperty": "Vendas por Cliente"
 			        }
 			      },
@@ -3390,7 +3501,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo_has_vendas_por_cliente": {
+			    "superstore_limpo_has_medida_vendas_por_cliente": {
 			      "Binding": {
 			        "ConceptualEntity": "superstore_limpo"
 			      },
@@ -3401,9 +3512,9 @@ cultureInfo pt-BR
 			            "Entity": "superstore_limpo"
 			          }
 			        },
-			        "superstore_limpo.vendas_por_cliente": {
+			        "medida.vendas_por_cliente": {
 			          "Target": {
-			            "Entity": "superstore_limpo.vendas_por_cliente"
+			            "Entity": "medida.vendas_por_cliente"
 			          }
 			        }
 			      },
@@ -3414,7 +3525,7 @@ cultureInfo pt-BR
 			              "Role": "superstore_limpo"
 			            },
 			            "Object": {
-			              "Role": "superstore_limpo.vendas_por_cliente"
+			              "Role": "medida.vendas_por_cliente"
 			            }
 			          },
 			          "State": "Generated",
@@ -3423,7 +3534,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo_has_total_de_clientes": {
+			    "superstore_limpo_has_medida_ticket_médio": {
 			      "Binding": {
 			        "ConceptualEntity": "superstore_limpo"
 			      },
@@ -3434,9 +3545,9 @@ cultureInfo pt-BR
 			            "Entity": "superstore_limpo"
 			          }
 			        },
-			        "superstore_limpo.total_de_clientes": {
+			        "medida.ticket_médio": {
 			          "Target": {
-			            "Entity": "superstore_limpo.total_de_clientes"
+			            "Entity": "medida.ticket_médio"
 			          }
 			        }
 			      },
@@ -3447,73 +3558,7 @@ cultureInfo pt-BR
 			              "Role": "superstore_limpo"
 			            },
 			            "Object": {
-			              "Role": "superstore_limpo.total_de_clientes"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "superstore_limpos_have_total_de_clientes"
-			        }
-			      ]
-			    },
-			    "superstore_limpo_has_desconto_médio": {
-			      "Binding": {
-			        "ConceptualEntity": "superstore_limpo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "superstore_limpo": {
-			          "Target": {
-			            "Entity": "superstore_limpo"
-			          }
-			        },
-			        "superstore_limpo.desconto_médio": {
-			          "Target": {
-			            "Entity": "superstore_limpo.desconto_médio"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "superstore_limpo"
-			            },
-			            "Object": {
-			              "Role": "superstore_limpo.desconto_médio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "superstore_limpos_have_desconto_médio"
-			        }
-			      ]
-			    },
-			    "superstore_limpo_has_ticket_médio": {
-			      "Binding": {
-			        "ConceptualEntity": "superstore_limpo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "superstore_limpo": {
-			          "Target": {
-			            "Entity": "superstore_limpo"
-			          }
-			        },
-			        "superstore_limpo.ticket_médio": {
-			          "Target": {
-			            "Entity": "superstore_limpo.ticket_médio"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "superstore_limpo"
-			            },
-			            "Object": {
-			              "Role": "superstore_limpo.ticket_médio"
+			              "Role": "medida.ticket_médio"
 			            }
 			          },
 			          "State": "Generated",
@@ -3522,7 +3567,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo_has_total_pedidos": {
+			    "superstore_limpo_has_medida_margem_": {
 			      "Binding": {
 			        "ConceptualEntity": "superstore_limpo"
 			      },
@@ -3533,9 +3578,9 @@ cultureInfo pt-BR
 			            "Entity": "superstore_limpo"
 			          }
 			        },
-			        "superstore_limpo.total_pedidos": {
+			        "medida.margem_": {
 			          "Target": {
-			            "Entity": "superstore_limpo.total_pedidos"
+			            "Entity": "medida.margem_"
 			          }
 			        }
 			      },
@@ -3546,40 +3591,7 @@ cultureInfo pt-BR
 			              "Role": "superstore_limpo"
 			            },
 			            "Object": {
-			              "Role": "superstore_limpo.total_pedidos"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "superstore_limpos_have_total_pedidos"
-			        }
-			      ]
-			    },
-			    "superstore_limpo_has_margem_": {
-			      "Binding": {
-			        "ConceptualEntity": "superstore_limpo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "superstore_limpo": {
-			          "Target": {
-			            "Entity": "superstore_limpo"
-			          }
-			        },
-			        "superstore_limpo.margem_": {
-			          "Target": {
-			            "Entity": "superstore_limpo.margem_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "superstore_limpo"
-			            },
-			            "Object": {
-			              "Role": "superstore_limpo.margem_"
+			              "Role": "medida.margem_"
 			            }
 			          },
 			          "State": "Generated",
@@ -3588,7 +3600,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo_has_total_lucro": {
+			    "superstore_limpo_has_medida_total_vendas": {
 			      "Binding": {
 			        "ConceptualEntity": "superstore_limpo"
 			      },
@@ -3599,9 +3611,9 @@ cultureInfo pt-BR
 			            "Entity": "superstore_limpo"
 			          }
 			        },
-			        "superstore_limpo.total_lucro": {
+			        "medida.total_vendas": {
 			          "Target": {
-			            "Entity": "superstore_limpo.total_lucro"
+			            "Entity": "medida.total_vendas"
 			          }
 			        }
 			      },
@@ -3612,7 +3624,73 @@ cultureInfo pt-BR
 			              "Role": "superstore_limpo"
 			            },
 			            "Object": {
-			              "Role": "superstore_limpo.total_lucro"
+			              "Role": "medida.total_vendas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "superstore_limpos_have_total_vendas"
+			        }
+			      ]
+			    },
+			    "superstore_limpo_has_medida_total_pedidos": {
+			      "Binding": {
+			        "ConceptualEntity": "superstore_limpo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "superstore_limpo": {
+			          "Target": {
+			            "Entity": "superstore_limpo"
+			          }
+			        },
+			        "medida.total_pedidos": {
+			          "Target": {
+			            "Entity": "medida.total_pedidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "superstore_limpo"
+			            },
+			            "Object": {
+			              "Role": "medida.total_pedidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "superstore_limpos_have_total_pedidos"
+			        }
+			      ]
+			    },
+			    "superstore_limpo_has_medida_total_lucro": {
+			      "Binding": {
+			        "ConceptualEntity": "superstore_limpo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "superstore_limpo": {
+			          "Target": {
+			            "Entity": "superstore_limpo"
+			          }
+			        },
+			        "medida.total_lucro": {
+			          "Target": {
+			            "Entity": "medida.total_lucro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "superstore_limpo"
+			            },
+			            "Object": {
+			              "Role": "medida.total_lucro"
 			            }
 			          },
 			          "State": "Generated",
@@ -3621,7 +3699,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "superstore_limpo_has_total_vendas": {
+			    "superstore_limpo_has_medida_total_de_clientes": {
 			      "Binding": {
 			        "ConceptualEntity": "superstore_limpo"
 			      },
@@ -3632,9 +3710,9 @@ cultureInfo pt-BR
 			            "Entity": "superstore_limpo"
 			          }
 			        },
-			        "superstore_limpo.total_vendas": {
+			        "medida.total_de_clientes": {
 			          "Target": {
-			            "Entity": "superstore_limpo.total_vendas"
+			            "Entity": "medida.total_de_clientes"
 			          }
 			        }
 			      },
@@ -3645,12 +3723,78 @@ cultureInfo pt-BR
 			              "Role": "superstore_limpo"
 			            },
 			            "Object": {
-			              "Role": "superstore_limpo.total_vendas"
+			              "Role": "medida.total_de_clientes"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "superstore_limpos_have_total_vendas"
+			          "ID": "superstore_limpos_have_total_de_clientes"
+			        }
+			      ]
+			    },
+			    "superstore_limpo_has_medida_desconto_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "superstore_limpo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "superstore_limpo": {
+			          "Target": {
+			            "Entity": "superstore_limpo"
+			          }
+			        },
+			        "medida.desconto_médio": {
+			          "Target": {
+			            "Entity": "medida.desconto_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "superstore_limpo"
+			            },
+			            "Object": {
+			              "Role": "medida.desconto_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "superstore_limpos_have_desconto_médio"
+			        }
+			      ]
+			    },
+			    "medida_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.value": {
+			          "Target": {
+			            "Entity": "medida.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_values"
 			        }
 			      ]
 			    },

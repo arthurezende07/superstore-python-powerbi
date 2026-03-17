@@ -1,46 +1,6 @@
 table superstore_limpo
 	lineageTag: dcfc98f8-c717-4428-af4f-1f351b3fdce1
 
-	measure 'Total Vendas' = SUM(superstore_limpo[sales])
-		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
-		lineageTag: bbb48970-53e0-4719-99ec-a96b91f7abd2
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure 'Total Lucro' = SUM(superstore_limpo[profit])
-		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
-		lineageTag: 153344bd-1c94-4cb2-957a-006424986a50
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure 'Margem %' = DIVIDE([Total Lucro],[Total Vendas],0)
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: 2105bd36-643a-48a6-826e-75293e683b65
-
-	measure 'Total Pedidos' = DISTINCTCOUNT(superstore_limpo[order_id])
-		formatString: 0
-		lineageTag: 52a91976-3918-4eec-8c42-fc47d62b05ec
-
-	measure 'Ticket Médio' = DIVIDE([Total Vendas],[Total Pedidos])
-		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
-		lineageTag: c61866b8-3b6c-4baf-bdf0-4131cb35abf2
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure 'Desconto Médio' = AVERAGE(superstore_limpo[discount])
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: 93a6a6e1-d7f0-42b8-822f-39e7d84b814d
-
-	measure 'Total de Clientes' = DISTINCTCOUNT(superstore_limpo[customer_id])
-		formatString: 0
-		lineageTag: 3ae67ea3-0552-41a8-a94f-65518d8ff42c
-
-	measure 'Vendas por Cliente' = DIVIDE([Total Vendas], [Total de Clientes])
-		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
-		lineageTag: dc54c1be-1ca8-41fd-a0dd-cfd8380ccfa9
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
 	column order_id
 		dataType: string
 		lineageTag: 102ec121-0b73-4c35-a313-c35ae218f2bd
