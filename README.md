@@ -25,7 +25,7 @@ O dataset em questão simula operações de uma rede varejista norte-americana f
 ![Dashboard Lucratividade](reports/images/lucratividade.png)
 
 - **Página 3** - Detalhamento de Clientes e Operações, abordando clientes mais lucrativos, produtos mais vendidos e envios mais solicitados.
-![Dashboard CLientes e Operações](reports/images/clientes_operacoes.png)
+![Dashboard CLientes e Operações](reports/images/clientes_operacoes_2.png)
 
 ## Insights e Tomada de Decisão
 Com a realização de todo o fluxo de tratamento e visualização de dados, foi possível identificar alguns pontos importantes, tais como:
